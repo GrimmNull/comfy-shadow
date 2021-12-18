@@ -717,3 +717,34 @@ nav.Root__nav-bar:hover {
 .spotifyinternal-artistnpv .npv-background-color--gradient {
 	--spice-rgb-shadow: rgb(0,0,0);
 }
+
+/*/ Spotify Premium Fullscreen /*/
+.npv-has-background-image.npv-has-audio.spotifyinternal-artistnpv .npv-background-overlay {
+    background-color: rgba(var(--spice-rgb-main),.4);
+}
+
+.spotifyinternal-artistnpv .npv-background-image {
+	filter: blur(3px);
+    left: -40px;
+    width: 102%;
+    height: 104%;
+    top: -40px;
+}
+
+.progress-bar {
+    --bg-color: var(--spice-button-disabled);
+    --fg-color: var(--spice-subtext);
+    --is-active-fg-color: #ffffff;
+    --progress-bar-transform: 0%;
+    --progress-bar-height: 4px;
+    --progress-bar-radius: calc(var(--progress-bar-height)/2);
+    height: 100%;
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
+    width: 100%;
+}
+
+.npv-cover-art {
+	box-shadow: 0 0 75px rgba(var(--spice-rgb-shadow),.4);
+}

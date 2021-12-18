@@ -1,7 +1,7 @@
 {
-    "name": "Comfy",
-    "description": "Stay comfy while listening to music",
-    "preview": "https://nyri4.github.io/Comfy-spicetify/assets/preview.png",
+    "name": "Comfy Shadow",
+    "description": "Stay comfy in style...",
+    "preview": "https://github.com/ohitstom/comfy-shadow/blob/main/preview.png?raw=true",
     "readme": "README.md",
     "usercss": "user.css",
     "schemes": "color.ini",

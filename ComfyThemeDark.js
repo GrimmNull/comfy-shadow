@@ -2,17 +2,16 @@
     const { Player, Menu, LocalStorage, Platform } = Spicetify
     const main = document.querySelector('.Root__main-view')
     const LyricsBackground = document.querySelector('.lyrics-lyricsContainer-LyricsBackground')
-	const activityquery = document.querySelector("aside.main-buddyFeed-buddyFeedRoot")
-	const topbar = document.querySelector("header.main-topBar-container")
-
-	
-	if (!(activityquery)) {
-		topbar.style.maxWidth = "none";
-	}
-	
-    if (!(Player && Menu && LocalStorage && Platform && main)) {
+    const activityquery = document.querySelector("aside.main-buddyFeed-buddyFeedRoot")
+    const topbar = document.querySelector("header.main-topBar-container")
+    
+    if (!(Player && Menu && LocalStorage && Platform && main && topbar)) {
         setTimeout(Comfy, 1000)
         return
+    }
+
+    if (!(activityquery)) {
+	topbar.style.maxWidth = "none";
     }
 
     const channels = ['/playlist/', '/album/', '/collection/tracks', '/collection/episodes', '/episode/', '/lyrics-plus']

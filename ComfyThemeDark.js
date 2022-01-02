@@ -1,24 +1,15 @@
-function waitForElement(els, func, timeout = 100) {
-    const queries = els.map(el => document.querySelector(el));
-    if (queries.every(a => a)) {
-        func(queries);
-    } else if (timeout > 0) {
-        setTimeout(waitForElement, 300, els, func, --timeout);
-    }
-}
-
-waitForElement([".Root__nav-bar"],([navBar]) => {
-    const newDiv = document.createElement("div");
-    newDiv.className = "testing";
-    navBar.parentNode.insertBefore(newDiv,navBar);
-});
-
 (function Comfy() {
     const { Player, Menu, LocalStorage, Platform } = Spicetify
     const main = document.querySelector('.Root__main-view')
     const LyricsBackground = document.querySelector('.lyrics-lyricsContainer-LyricsBackground')
-    const mainChild = document.createElement("div")
+	const activityquery = document.querySelector("aside.main-buddyFeed-buddyFeedRoot")
+	const topbar = document.querySelector("header.main-topBar-container")
 
+	
+	if (!(activityquery)) {
+		topbar.style.maxWidth = "none";
+	}
+	
     if (!(Player && Menu && LocalStorage && Platform && main)) {
         setTimeout(Comfy, 1000)
         return

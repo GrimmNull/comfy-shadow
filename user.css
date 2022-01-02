@@ -577,7 +577,7 @@
 
 .Root__nav-bar {
   position: absolute;
-  width: 120px;
+  width: 65px;
   opacity: 0;
   bottom: 0;
   left: 0;
@@ -592,14 +592,36 @@ nav.Root__nav-bar:hover {
   transition: visibility 5s, opacity 0.5s linear;
 }
 
+/*/ test code
+.Root__nav-bar {
+  transform: translateX(-120px);
+  transition: transform .3s, content-visibility .3s, margin-right .3s;
+  content-visibility: hidden;
+  margin-right: -225px;
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+nav.Root__nav-bar:hover {
+  margin-right: 0px;
+  position: inherit;
+  transform: translateX(0px);
+  width: 225px;
+  opacity: 1;
+  content-visibility: initial;
+  transition:  margin-right .3s, transform .3s, opacity 0.3s linear, content-visibility .3s, position .3s;
+}
+/*/
+
 .LayoutResizer__resize-bar {	
     cursor: none;
 }
 
 /*/ Top Bar Mod /*/
-.main-topBar-container {
-	max-width: calc(112vw - var(--nav-bar-width))
-}
 .Root__top-bar {
     opacity: 0;
     transition: visibility 5s, opacity 1s linear;
@@ -747,4 +769,23 @@ nav.Root__nav-bar:hover {
 
 .npv-cover-art {
 	box-shadow: 0 0 75px rgba(var(--spice-rgb-shadow),.4);
+}
+
+/*/ Friends Panel Mod /*/
+aside.main-buddyFeed-buddyFeedRoot:hover {
+    position: inherit;
+    width: var(--buddy-feed-width);
+    opacity: 1;
+    transition: visibility 5s, opacity 0.5s linear;
+    left: 0;
+}
+
+aside.main-buddyFeed-buddyFeedRoot {
+    position: absolute;
+    width: 65px;
+    opacity: 0;
+    bottom: 0;
+    left: -30px;
+    top: 0;
+    z-index: 1;
 }

@@ -5,5 +5,5 @@
     "readme": "README.md",
     "usercss": "user.css",
     "schemes": "color.ini",
-    "include": ["https://nyri4.github.io/Comfy-spicetify/Comfy.js"]
+    "include": ["https://raw.githubusercontent.com/ohitstom/comfy-shadow/main/ComfyThemeDark.js"]
 }

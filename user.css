@@ -733,7 +733,7 @@ nav.Root__nav-bar:hover {
 
 /*/ Scrollbar Removal /*/
 .os-scrollbar-vertical {
-	display: none;
+		;
 }
 
 .spotifyinternal-artistnpv .npv-background-color--gradient {

@@ -111,7 +111,7 @@
 :root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow, :root .Root__main-view section[data-testid=artist-page] .main-trackList-trackListRow {
   grid-template-columns: [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px, 1fr) !important;
 }
-:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow > .main-trackList-rowSectionIndex, :root .Root__main-view section[data-testid=artist-page] .main-trackList-trackListRow > .main-trackList-rowSectionIndex {
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow > .main-trackList-rowSectionIndex {
   position: absolute;
   z-index: 1000;
   top: 8px;
@@ -680,27 +680,44 @@ nav.Root__nav-bar:hover {
 
 
 /*/ Shuffle Button Recolor /*/
-.main-shuffleButton-button.MJRtHquHJNFWGi6uP99a:not([disabled]):focus:not(:focus-visible):not(:hover) {
-	color: #ffffff;
+.main-shuffleButton-button.pp1ooFGqFEUG5ucC6_KW:not([disabled]):focus:not(:focus-visible):not(:hover) {
+    color: var(--spice-subtext);
 }
 
-.main-shuffleButton-button.MJRtHquHJNFWGi6uP99a {
-	color: #ffffff;
+.main-shuffleButton-button:focus:not(:focus-visible):not(:hover) {
+    color: var(--spice-subtext);
 }
 
-.main-shuffleButton-button.MJRtHquHJNFWGi6uP99a:not([disabled]):focus, .main-repeatButton-button.LGeyjw_GB3ErqpcSNtX3:not([disabled]):hover {
-	color: #ffffff;
+.main-shuffleButton-button.pp1ooFGqFEUG5ucC6_KW {
+    color: var(--spice-subtext);
 }
 
-
-/*/ Repeat Button Recolor /*/
-.main-repeatButton-button.LGeyjw_GB3ErqpcSNtX3:not([disabled]):focus:not(:focus-visible):not(:hover) {
-	color: #ffffff;
-}
-.main-repeatButton-button.LGeyjw_GB3ErqpcSNtX3 {
+.main-shuffleButton-button:focus, .main-shuffleButton-button:hover {
     color: #ffffff;
 }
-.main-repeatButton-button.LGeyjw_GB3ErqpcSNtX3:not([disabled]):focus, .main-repeatButton-button.LGeyjw_GB3ErqpcSNtX3:not([disabled]):hover {
+
+.main-shuffleButton-button.pp1ooFGqFEUG5ucC6_KW:not([disabled]):focus, .main-shuffleButton-button.pp1ooFGqFEUG5ucC6_KW:not([disabled]):hover {
+    color: #ffffff;
+}
+
+/*/ Repeat Button Recolor /*/
+.main-repeatButton-button.yKo7LWUCQCEALszRxAaS:not([disabled]):focus:not(:focus-visible):not(:hover) {
+    color: var(--spice-subtext);
+}
+
+.main-repeatButton-button.yKo7LWUCQCEALszRxAaS:focus:not(:focus-visible):not(:hover) {
+    color: var(--spice-subtext);
+}
+
+.main-repeatButton-button.yKo7LWUCQCEALszRxAaS {
+    color: var(--spice-subtext);
+}
+
+.main-repeatButton-button.yKo7LWUCQCEALszRxAaS:focus, .main-repeatButton-button.yKo7LWUCQCEALszRxAaS:hover {
+    color: #ffffff;
+}
+
+.main-repeatButton-button.yKo7LWUCQCEALszRxAaS:not([disabled]):focus, .main-repeatButton-button.yKo7LWUCQCEALszRxAaS:not([disabled]):hover {
     color: #ffffff;
 }
 
@@ -708,6 +725,14 @@ nav.Root__nav-bar:hover {
 :root .main-trackList-rowHeartButton *:not([fill=none]), :root .control-button-heart *:not([fill=none]) {
     color: #ffffff !important;
     fill: #ffffff !important;
+}
+
+.main-addButton-button:focus, .main-addButton-button:hover {
+    color: var(--spice-text) !important;
+}
+
+.main-addButton-active, .main-addButton-active:focus {
+	color: var(--spice-subtext) !important;
 }
 
 /*/ Episode Recolor /*/
@@ -748,6 +773,10 @@ nav.Root__nav-bar:hover {
 
 .main-editImageButton-icon.icon {
 	color: #000000;
+}
+
+svg.main-coverSlotExpandedCollapseButton-chevron {
+    color: rgb(0,0,0);
 }
 
 /*/ Activity Fix /*/
@@ -825,65 +854,125 @@ aside.main-buddyFeed-buddyFeedRoot {
 
 
 /*/ Tracklist /*/
-.main-trackList-trackListRow.main-trackList-selected, .main-trackList-trackListRow.main-trackList-selected:hover {
+
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow.main-trackList-selected, .main-trackList-trackListRow.main-trackList-selected:hover {
     background-color: rgb(58 58 58 / 25%);
 }
 
-.main-trackList-rowPlayPauseButton {
+:root .Root__main-view section[data-testid=playlist-page] button.main-trackList-rowImagePlayButton {
     color: #000000d1;
 }
 
-.main-trackList-trackListRow.main-trackList-active:hover .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active:hover .main-trackList-rowMarker {
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow.main-trackList-active:hover .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active:hover .main-trackList-rowMarker {
 	color: rgb(255,255,255);
 	text-shadow: 0px 0px 6px white;
 	-webkit-text-stroke: thin;
 }
 
-.main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
 	color: rgb(255,255,255);
 	text-shadow: 0px 0px 6px white;
 	-webkit-text-stroke: thin;
 }
 
-.main-trackList-trackListRow.main-trackList-active:focus-within .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active:focus-within .main-trackList-rowMarker {
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow.main-trackList-active:focus-within .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active:focus-within .main-trackList-rowMarker {
 	color: rgb(255,255,255);
 	text-shadow: 0px 0px 6px white;
 	-webkit-text-stroke: thin;
 }
 
-.main-trackList-rowSectionIndex:hover {
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-rowSectionIndex:hover {
 	background: rgba(var(--spice-rgb-shadow),.5);
 	border-radius: var(--border-radius);
 }
 
-.main-trackList-trackListRow:hover .main-trackList-rowSectionIndex {
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow:hover .main-trackList-rowSectionIndex {
 	background: rgba(var(--spice-rgb-shadow),.5);
 	border-radius: var(--border-radius);	
 }
 
-.main-trackList-trackListRowGrid:hover .main-trackList-rowSectionIndex {
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow:focus-within .main-trackList-rowSectionIndex {
+	background: rgba(var(--spice-rgb-shadow),.5);
+	border-radius: var(--border-radius);	
+}
+
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRowGrid:hover .main-trackList-rowSectionIndex {
 	background: rgba(var(--spice-rgb-shadow),.5);
 	border-radius: var(--border-radius);
 }
 
-.main-trackList-trackListRow.main-trackList-active:focus-within .main-trackList-rowSectionIndex {
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow.main-trackList-active:focus-within .main-trackList-rowSectionIndex {
 	background: rgba(var(--spice-rgb-shadow),.5);
 	border-radius: var(--border-radius);
 }
 
-.main-trackList-trackListRow.main-trackList-active .main-trackList-rowSectionIndex {
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow.main-trackList-active .main-trackList-rowSectionIndex {
 	background: rgba(var(--spice-rgb-shadow),.5);
 	border-radius: var(--border-radius);
 }
 
-.main-trackList-trackListRow.main-trackList-active button.main-trackList-rowPlayPauseButton {
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow.main-trackList-active button.main-trackList-rowImagePlayButton  {
 	opacity: 1;
 }
 
-.main-trackList-trackListRow.main-trackList-active:focus-within button.main-trackList-rowPlayPauseButton {
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow.main-trackList-active:focus-within button.main-trackList-rowImagePlayButton  {
 	opacity: 1;
 }
 
+/*/
 img.main-trackList-playingIcon {
     display: none;
+}
+
+/*/
+
+/*/ Play Button Fix /*/
+.JkEwH:hover .ButtonInner-sc-14ud5tc-0, .JkEwH:hover .ButtonFocus-sc-2hq6ey-0 {
+    transform: scale(1.00);
+}
+
+.JkEwH:hover {
+    transform: scale(1.04);
+	box-shadow: 0px 0px 6px white;
+	transition: none 33ms cubic-bezier(.3,0,0,1);
+	transition-property: all;
+}
+
+.JkEwH {
+    background-color: #ffffff;
+    border: 0;
+}
+
+.cSeieV {
+    border-radius: var(--border-radius);
+}
+.gOkZP {
+	border-radius: var(--border-radius);
+}
+
+.encore-dark-theme .encore-bright-accent-set {
+    --background-base: #ffffff;
+    --background-highlight: #ffffff;
+    --background-press: #ffffff;
+}
+
+/*/ Lyric button + Queue button Fix /*/
+
+.control-button--active {
+    fill: var(--spice-subtext) !important;
+    color: var(--spice-subtext) !important;
+}
+
+.control-button:hover {
+    fill: rgb(255,255,255) !important;
+    color: rgb(255,255,255)!important;
+}
+
+.control-button:focus {
+    fill: var(--spice-subtext) !important;
+    color: var(--spice-subtext) !important;
+}
+
+.control-button--active-dot:after {
+	background-color: var(--spice-subtext) !important;
 }

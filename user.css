@@ -977,3 +977,7 @@ aside.main-buddyFeed-buddyFeedRoot {
 .control-button--active-dot:after {
 	background-color: var(--spice-subtext) !important;
 }
+
+.main-view-container__scroll-node-child-spacer {
+    height: 60px;
+}

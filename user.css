@@ -63,7 +63,7 @@
   height: calc(100% - 243px);
 }
 :root .Root__main-view section[data-testid=playlist-page] .main-actionBar-ActionBar, :root .Root__main-view section[data-testid=album-page] .main-actionBar-ActionBar, :root .Root__main-view section[data-testid=your-episodes-page] .main-actionBar-ActionBar, :root .Root__main-view section[data-testid=artist-page] .main-actionBar-ActionBar {
-  padding: 8px 16px 16px 16px;
+  padding: 8px 16px 16px 44px;
 }
 :root .Root__main-view section[data-testid=playlist-page] .main-actionBar-ActionBar .main-playButton-PlayButton, :root .Root__main-view section[data-testid=album-page] .main-actionBar-ActionBar .main-playButton-PlayButton, :root .Root__main-view section[data-testid=your-episodes-page] .main-actionBar-ActionBar .main-playButton-PlayButton, :root .Root__main-view section[data-testid=artist-page] .main-actionBar-ActionBar .main-playButton-PlayButton {
   margin-top: -24px;
@@ -919,13 +919,6 @@ aside.main-buddyFeed-buddyFeedRoot {
 	opacity: 1;
 }
 
-/*/
-img.main-trackList-playingIcon {
-    display: none;
-}
-
-/*/
-
 /*/ Play Button Fix /*/
 .JkEwH:hover .ButtonInner-sc-14ud5tc-0, .JkEwH:hover .ButtonFocus-sc-2hq6ey-0 {
     transform: scale(1.00);
@@ -954,6 +947,14 @@ img.main-trackList-playingIcon {
     --background-base: #ffffff;
     --background-highlight: #ffffff;
     --background-press: #ffffff;
+}
+
+.main-actionBar-ActionBarRow>:first-child {
+	margin-right: 24px
+}
+
+.contentSpacing {
+    padding: inherit 34px;
 }
 
 /*/ Lyric button + Queue button Fix /*/

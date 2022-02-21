@@ -56,15 +56,26 @@
 :root .Root__main-view .main-yourEpisodes-yourEpisodesContentWrapper {
   max-width: unset;
 }
-:root .Root__main-view .main-actionBarBackground-background {
-  background: linear-gradient(rgba(150, 150, 150, 0.6) 0, 
+#main > div > div.Root__top-container > div.Root__main-view > main > div.os-host.os-host-foreign.os-theme-spotify.os-host-resize-disabled.os-host-scrollbar-horizontal-hidden.main-view-container__scroll-node.os-host-transition.os-host-overflow.os-host-overflow-y > div.os-padding > div > div > div.main-view-container__scroll-node-child > section > div > div.iB16LxoPzDeVZo8zPhPQ > div.main-actionBarBackground-background {
+  background: linear-gradient(rgba(255, 255, 255, 0.8) 0, 
   var(--spice-main) 232px), 
   var(--background-noise) !important;
   height: calc(100% - 243px);
+  
 }
-:root .Root__main-view section[data-testid=playlist-page] .main-actionBar-ActionBar, :root .Root__main-view section[data-testid=album-page] .main-actionBar-ActionBar, :root .Root__main-view section[data-testid=your-episodes-page] .main-actionBar-ActionBar, :root .Root__main-view section[data-testid=artist-page] .main-actionBar-ActionBar {
-  padding: 8px 16px 16px 44px;
+
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow, :root .Root__main-view section[data-testid=artist-page] .main-trackList-trackListRow {	
+  grid-template-columns: [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px, 1fr) !important;	
 }
+
+:root .Root__main-view .main-actionBarBackground-background {
+  background: linear-gradient(rgba(255, 255, 255, 0.6) 0, 
+  var(--spice-main) 232px), 
+  var(--background-noise) !important;
+  height: calc(100% - 243px);
+  
+}
+
 :root .Root__main-view section[data-testid=playlist-page] .main-actionBar-ActionBar .main-playButton-PlayButton, :root .Root__main-view section[data-testid=album-page] .main-actionBar-ActionBar .main-playButton-PlayButton, :root .Root__main-view section[data-testid=your-episodes-page] .main-actionBar-ActionBar .main-playButton-PlayButton, :root .Root__main-view section[data-testid=artist-page] .main-actionBar-ActionBar .main-playButton-PlayButton {
   margin-top: -24px;
   margin-left: 8px;
@@ -84,7 +95,7 @@
 :root .Root__main-view section[data-testid=your-episodes-page] > .main-yourEpisodes-yourEpisodesContentWrapper [data-testid^=episode-] {
   margin: 0;
 }
-:root .Root__main-view section[data-testid=playlist-page] > div:last-child, :root .Root__main-view section[data-testid=album-page] > div:nth-last-child(2), :root .Root__main-view section[data-testid=episode] > div:last-child, :root .Root__main-view section[data-testid=your-episodes-page] > div:last-child, :root .Root__main-view section[data-testid=artist-page] > div > div:last-child {
+:root .Root__main-view section[data-testid=playlist-page] > div:last-child, :root .Root__main-view section[data-testid=album-page] > div:nth-last-child(2), :root .Root__main-view section[data-testid=episode] > div:last-child, :root .Root__main-view section[data-testid=your-episodes-page] > div:last-child {
   background: none;
 }
 :root .Root__main-view section[data-testid=playlist-page] > div:last-child .main-trackList-trackListRowGrid, :root .Root__main-view section[data-testid=album-page] > div:nth-last-child(2) .main-trackList-trackListRowGrid, :root .Root__main-view section[data-testid=episode] > div:last-child .main-trackList-trackListRowGrid, :root .Root__main-view section[data-testid=your-episodes-page] > div:last-child .main-trackList-trackListRowGrid, :root .Root__main-view section[data-testid=artist-page] > div > div:last-child .main-trackList-trackListRowGrid {
@@ -108,9 +119,7 @@
 :root .Root__main-view section[data-testid] {
   position: relative;
 }
-:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow, :root .Root__main-view section[data-testid=artist-page] .main-trackList-trackListRow {
-  grid-template-columns: [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px, 1fr) !important;
-}
+
 :root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow > .main-trackList-rowSectionIndex {
   position: absolute;
   z-index: 1000;
@@ -122,9 +131,33 @@
   text-indent: -1000px;
 }
 
+.main-entityHeader-background.main-entityHeader-gradient {
+    -webkit-animation: background-animation 1s linear;
+    animation: background-animation 1s linear;
+    -webkit-animation-delay: calc(var(--scroll)*-1s);
+    animation-delay: calc(var(--scroll)*-1s);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.0);
+}
+
 :root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackList[aria-colcount="6"] .main-trackList-trackListRow, :root .Root__main-view section[data-testid=artist-page] .main-trackList-trackList[aria-colcount="6"] .main-trackList-trackListRow {
   grid-template-columns: [first] 6fr [var1] 4fr [var2] 3fr [var3] minmax(120px, 2fr) [last] minmax(120px, 1fr) !important;
 }
+
+
+
+:root .Root__main-view section[data-testid=playlist-page] .main-trackList-trackListRow {
+    grid-template-columns: [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px, 1fr) !important;
+}
+
+
 
 :root .Root__nav-bar {
   overflow: hidden;

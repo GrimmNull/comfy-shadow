@@ -672,10 +672,10 @@ nav.Root__nav-bar:hover {
 /*/ Top Bar Mod /*/
 .main-topBar-background {
     background-color: rgb(20,20,20) !important;
-    opacity: 35% !important;
+    opacity: 0 !important;
 }
 
-.Root__top-bar {
+.Root__top-bar{
     opacity: 0;
     transition: visibility 5s, opacity 1s linear;
 }
@@ -686,6 +686,12 @@ nav.Root__nav-bar:hover {
     transition: visibility 5s, opacity 0.5s linear;
 }
 
+.main-topBar-historyButtons {
+	padding-inline-end: 69%;
+}
+.main-topBar-topbarContentWrapper {
+	display: none !important;
+}
 .main-topBar-container {
     -webkit-padding-end: 32px;
     padding: 16px 85px;
@@ -765,8 +771,14 @@ nav.Root__nav-bar:hover {
 }
 
 /*/ Episode Recolor /*/
-#spicetify-sticky-list > div:nth-child(7) > a > div.main-collectionLinkButton-icon > div > svg > path:nth-child(1n) {
-	fill: rgb(255,255,255);
+#spicetify-sticky-list > div:nth-child(8) > a > div.main-collectionLinkButton-icon > div > svg > path {
+    fill: white !important;
+}
+
+#spicetify-sticky-list > div:nth-child(7) > a > div.main-collectionLinkButton-icon > div > svg > path {
+	fill: white) !important;
+}
+
 }
 /*/ Text Removal /*/
 :root p.lyrics-lyricsContainer-Provider {

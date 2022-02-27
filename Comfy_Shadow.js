@@ -12,7 +12,13 @@
     }
 	
 	topbar.style.paddingInlineEnd = "162px"
-
+	activityquery.addEventListener("mouseenter", e => {
+		topbar.style.paddingInlineEnd = "32px"
+	});
+	activityquery.addEventListener("mouseleave", e => {
+		topbar.style.paddingInlineEnd = "162px"
+	});
+	
     const channels = ['/playlist/', '/album/', '/collection/tracks', '/collection/episodes', '/episode/', '/lyrics-plus']
     main.appendChild(mainChild)
     mainChild.id = "mainImage"
@@ -38,6 +44,8 @@
             else { mainChild.style.backgroundImage = null}
         }
     })
+
+
 	
     // Change the song image on song change
     Player.addEventListener("songchange", () => {

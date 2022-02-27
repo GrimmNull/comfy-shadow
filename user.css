@@ -547,7 +547,7 @@
 }
 
 .Root__main-view > div:first-of-type > div, .desktoproutes-homepage-takeover-ad-hptoComponent-parentContainer {
-  display: none;
+  display: block;
 }
 
 :root {
@@ -672,7 +672,7 @@ nav.Root__nav-bar:hover {
 /*/ Top Bar Mod /*/
 .main-topBar-background {
     background-color: rgb(20,20,20) !important;
-    opacity: 0 !important;
+    opacity: 30% !important;
 }
 
 .Root__top-bar{
@@ -686,12 +686,7 @@ nav.Root__nav-bar:hover {
     transition: visibility 5s, opacity 0.5s linear;
 }
 
-.main-topBar-historyButtons {
-	padding-inline-end: 69%;
-}
-.main-topBar-topbarContentWrapper {
-	display: none !important;
-}
+
 .main-topBar-container {
     -webkit-padding-end: 32px;
     padding: 16px 85px;
@@ -779,7 +774,6 @@ nav.Root__nav-bar:hover {
 	fill: white !important;
 }
 
-}
 /*/ Text Removal /*/
 :root p.lyrics-lyricsContainer-Provider {
 	font-size: 0;

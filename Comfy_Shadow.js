@@ -10,11 +10,8 @@
         setTimeout(Comfy, 1000)
         return
     }
-
 	
-	if (!(activityquery)) {
-		topbar.style.maxWidth = "none";
-	}
+	topbar.style.paddingInlineEnd = "10%"
 
     const channels = ['/playlist/', '/album/', '/collection/tracks', '/collection/episodes', '/episode/', '/lyrics-plus']
     main.appendChild(mainChild)
@@ -41,8 +38,7 @@
             else { mainChild.style.backgroundImage = null}
         }
     })
-
-
+	
     // Change the song image on song change
     Player.addEventListener("songchange", () => {
         for (var i = 0; i < channels.length; i++) {

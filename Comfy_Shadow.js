@@ -11,7 +11,7 @@
         return
     }
 	
-	topbar.style.paddingInlineEnd = "10%"
+	topbar.style.paddingInlineEnd = "162px"
 
     const channels = ['/playlist/', '/album/', '/collection/tracks', '/collection/episodes', '/episode/', '/lyrics-plus']
     main.appendChild(mainChild)

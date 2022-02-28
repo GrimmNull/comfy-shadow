@@ -1,4 +1,3 @@
-
 /*/ Nav Bar Mod /*/
 .main-likedSongsButton-likedSongsIcon {
     background: linear-gradient(149.46deg, #666666, #000000 99.16%) !important;
@@ -61,6 +60,7 @@ nav.Root__nav-bar:hover {
     -webkit-padding-end: 32px;
     padding: 16px 85px;
     padding-inline-end: 32px;
+	max-width: none;
 }
 
 
@@ -132,7 +132,7 @@ nav.Root__nav-bar:hover {
 }
 
 .main-addButton-active, .main-addButton-active:focus {
-	color: var(--spice-subtext) !important;
+	color: rgba(255,255,255,.7) !important;
 }
 
 /*/ Episode Recolor /*/
@@ -945,10 +945,7 @@ aside.main-buddyFeed-buddyFeedRoot {
 :root button, :root input, :root img {
   border-radius: var(--border-radius);
 }
-:root .main-trackList-rowHeartButton *:not([fill=none]), :root .control-button-heart *:not([fill=none]) {
-  color: #d25050 !important;
-  fill: #d25050 !important;
-}
+
 :root .main-trackList-rowSectionEnd .main-addButton-active, :root .main-trackList-rowSectionEnd .main-addButton-active:focus, :root .main-trackList-rowSectionEnd .main-addButton-active:hover {
   color: #d25050;
 }

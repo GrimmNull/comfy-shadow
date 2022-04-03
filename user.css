@@ -169,11 +169,6 @@ nav.Root__nav-bar:hover {
 	overflow: hidden;
 }
 
-
-:root .Root__now-playing-bar .main-nowPlayingBar-container .main-nowPlayingBar-nowPlayingBar .main-nowPlayingWidget-nowPlaying.main-nowPlayingWidget-coverExpanded {
-    transform: translateX(-135px);
-}
-
 .cover-art.shadow {
     box-shadow: 0 0 10px rgba(var(--spice-rgb-shadow),.4);
 }
@@ -829,7 +824,10 @@ aside.main-buddyFeed-buddyFeedRoot {
   padding-bottom: 16px;
 }
 :root .Root__now-playing-bar .main-nowPlayingBar-container .main-nowPlayingBar-nowPlayingBar .main-nowPlayingWidget-nowPlaying.main-nowPlayingWidget-coverExpanded {
-  transform: translateX(-100px);
+    transform: translateX(-125px);
+}
+:root .Root__now-playing-bar .main-nowPlayingBar-container .main-nowPlayingBar-nowPlayingBar .main-nowPlayingWidget-nowPlaying.main-nowPlayingWidget-coverExpanded .main-coverSlotCollapsed-container {
+	opacity: 0;
 }
 :root .Root__now-playing-bar .main-nowPlayingBar-container .main-nowPlayingBar-nowPlayingBar .main-nowPlayingWidget-nowPlaying .main-coverSlotCollapsed-container {
   top: -20px;

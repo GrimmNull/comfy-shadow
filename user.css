@@ -4,6 +4,71 @@ nav.Root__nav-bar { position: inherit !important; width: calc(var(--nav-bar-widt
 
 REMOVE THIS LINE TO DISABLE HOVERING OF PANELS /*/
 
+/* Custom css code */
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.main-trackList-trackListRow.main-trackList-active .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
+    color: #D728CD;
+    stroke: #D728CD;
+}
+
+.main-trackList-trackListRow.main-trackList-active:hover .main-trackList-rowTitle, .main-trackList-trackListRow.main-trackList-active .main-trackList-rowMarker {
+    color: #D728CD;
+    stroke: #D728CD;
+}
+
+.playback-progressbar {
+    height: 1px;
+    line-height: 5px;
+}
+
+:root .Root__main-view .main-actionBarBackground-background {
+    background: linear-gradient(45deg, black, transparent) !important;
+    height: 100%;
+}
+
+.main-trackList-trackListHeader {
+    position: inherit;
+}
+
+input:checked~.x-toggle-indicatorWrapper {
+    background-color: #D728CD;
+}
+
+aside[aria-label="Friend Activity"] {
+    width: 200px;
+}
+
+.LayoutResizer__resize-bar {
+    display: none;
+}
+
+aside[aria-label="Friend Activity"] > div:nth-child(2) {
+    opacity: 0.9;
+
+    left: unset;
+    right: 0;
+}
+
+aside[aria-label="Friend Activity"] .encore-inverted-light-set {
+    width: 70%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-inline: auto;
+    font-size: 12px;
+}
+
+.main-shelf-shelf {
+    background-color: #141414;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+/* Original css code*/
 
 /*/ Nav Bar Mod /*/
 .main-likedSongsButton-likedSongsIcon {
